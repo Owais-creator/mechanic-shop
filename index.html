@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qadri Autos</title>
+   <link rel="icon" type="image/png" href="./e8f25d0f019c0d5a2f42350ae740e012c6f53c2a-removebg-preview.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <img src="./e8f25d0f019c0d5a2f42350ae740e012c6f53c2a-removebg-preview.png" alt="Qadri Autos Logo">
+  </div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+<nav id="nav-menu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#Mechanics">Mechanics</a>
+  <a href="#contact">Contact</a>
+  <a href="#address">Address</a>
+</nav>
+
+</header>
+
+  <!-- ✅ HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-image">
+      <img src="./istockphoto-1051029946-612x612.jpg" alt="Honda 125 Bike">
+    </div>
+    <div class="hero-text">
+      <h1>Qadri Autos</h1>
+      <p>Bike Repair & Mechanic Workshop</p>
+      <a href="#contact" class="btn"> Contact Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ ABOUT SECTION (Directly after hero) -->
+<section id="about" class="fade-in">
+  <h2>About Qadri Autos</h2>
+  <div class="about-container">
+    <p>
+      Welcome to <span>Qadri Autos</span> — your trusted motorcycle repair and service workshop.
+      We provide <b>Complete Wiring</b>, <b>Tuning</b>, <b>Oil Changes</b>, and <b>Minor Fault Fixes</b>
+      for all major Pakistani bikes including <b>Honda</b>, <b>Suzuki</b>, and <b>Super Star</b>.
+      Our expert mechanics <b>Kamran Tai</b> and <b>Ramesh Singh</b> are always ready to give your
+      bike the best performance and reliability.
+    </p>
+  </div>
+</section>
+
+
+
+  <section id="services" class="fade-in">
+  <h2>Our Services</h2>
+  <div class="services-container">
+    <div class="service-card">
+      <h3>Engine Tuning</h3>
+      <p>High-performance tuning for better speed and efficiency.</p>
+    </div>
+    <div class="service-card">
+      <h3>Oil Change</h3>
+      <p>Fast oil changes with premium lubricants.</p>
+    </div>
+    <div class="service-card">
+      <h3>Body Repair</h3>
+      <p>Scratch, dent, and paint restoration with perfection.</p>
+    </div>
+
+    <!-- 🔥 New Boxes Added -->
+    <div class="service-card">
+      <h3>Bike Complete Wiring</h3>
+      <p>Expert wiring solutions for all motorcycle models — ensuring smooth performance.</p>
+    </div>
+    <div class="service-card">
+      <h3>Bike Small Faults</h3>
+      <p>Quick diagnosis and repair for minor issues to keep your bike running perfectly.</p>
+    </div>
+    <div class="service-card">
+      <h3>Bike Service & Tuning</h3>
+      <p>Professional maintenance, washing, and performance tuning for your ride.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="Mechanics" class="fade-in">
+  <h2>Our Mechanics</h2>
+  <div class="mechanics-container">
+
+    <!-- Mechanic 1 -->
+    <div class="mechanic-card">
+      <img src="./motorcycle-mechanic-motor-working-honda-gilgit-baltistan-city-danyoor-226597456.webp" alt="Kamran Tai">
+      <h3>Kamran Tai</h3>
+      <p>📞 0320-3057404</p>
+    </div>
+
+    <!-- Mechanic 2 -->
+    <div class="mechanic-card">
+      <img src="./fcfe81276a280fce9bb057056b11b6089cdd5089.png" alt="Ramesh Singh">
+      <h3>Ramesh Singh</h3>
+      <p>📞 0311-3673305</p>
+    </div>
+
+  </div>
+</section>
+
+  <section id="contact" class="fade-in">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="text" placeholder="Your Number" required />
+    <select required>
+      <option value="">Select Your Bike</option>
+      <option>Honda 70</option>
+      <option>Honda 125</option>
+      <option>Honda 150</option>
+      <option>Suzuki 110</option>
+      <option>Suzuki 150</option>
+      <option>Super Star 70</option>
+      <option>Other Pakistani 70cc</option>
+    </select>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <!-- WhatsApp Contact -->
+  <div class="whatsapp-contact">
+    <a href="https://wa.me/923333057404?text=Hello%20Qadri%20Autos%20Team!%20I%20need%20bike%20service%20assistance." target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+      <span>Chat on WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- ✅ Stylish Address Bar -->
+<div class="address-bar" id="address">
+  <span><h2>Address :</h2></span>
+  <p>
+    <b>Near :</b> 🏍️ Chuttan Shah Baba Shrine, Left Side Bike Mechanic Row, First Shop – 
+    <strong>Qadri Autos</strong>
+  </p>
+</div>
+
+</section>
+
+
+     
+  </section>
+  <script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Form data
+    const name = document.querySelector('input[placeholder="Your Name"]').value.trim();
+    const number = document.querySelector('input[placeholder="Your Number"]').value.trim();
+    const bike = document.querySelector('select').value;
+
+    if (!name || !number || !bike) {
+      alert("⚠️ Please fill all fields before submitting!");
+      return;
+    }
+
+    // WhatsApp message
+    const message = `Hello Qadri Autos,%0AMy Name: ${name}%0AContact Number: ${number}%0ABike Model: ${bike}%0AI need service assistance.`;
+    const whatsappURL = `https://wa.me/923333057404?text=${message}`;
+
+    // WhatsApp open
+    window.open(whatsappURL, "_blank");
+
+    // Success message show kare
+    const successMsg = document.createElement("p");
+    successMsg.textContent = "✅ Your message has been sent successfully!";
+    successMsg.style.color = "#3dbe29";
+    successMsg.style.marginTop = "15px";
+    successMsg.style.fontWeight = "600";
+
+    // Insert message form ke niche
+    const form = document.querySelector("form");
+    if (!document.querySelector(".success-msg")) {
+      successMsg.classList.add("success-msg");
+      form.appendChild(successMsg);
+    }
+
+    // Clear form fields
+    form.reset();
+
+    // Message hide after 4 seconds
+    setTimeout(() => {
+      successMsg.remove();
+    }, 4000);
+  });
+</script>
+
+
+  <!-- ✅ Footer ab contact section ke bahar hai -->
+  <footer>
+    <p>© 2025 Qadri Autos | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
