@@ -30,19 +30,13 @@
 </nav>
 
 </header>
-
-  <!-- ✅ HERO SECTION -->
+<!-- HERO SECTION -->
 <section class="hero" id="home">
+  <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-image">
-      <img src="./istockphoto-1051029946-612x612.jpg" alt="Honda 125 Bike">
-    </div>
-    <div class="hero-text">
-      <h1>Qadri Autos</h1>
-      <p>Bike Repair & Mechanic Workshop</p>  
-  
-       <a href="#contact" class="btn">Contact Now</a>
-    </div>
+    <h1>Qadri Autos</h1>
+    <p>Bike Repair & Mechanic Workshop</p>
+    <a href="#contact" class="btn">Contact Now</a>
   </div>
 </section>
 
@@ -200,6 +194,16 @@
       successMsg.remove();
     }, 4000);
   });
+  // Navbar scroll effect
+window.addEventListener("scroll", function() {
+  const header = document.querySelector("header");
+  if (window.scrollY > 50) { // jab 50px scroll ho
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
 </script>
 
 
