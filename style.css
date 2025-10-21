@@ -11,6 +11,33 @@ body {
   color: #fff;
   line-height: 1.6;
 }
+/* ✅ Tablet fix: Ensure full scroll area is visible */
+html, body {
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ✅ Make sure hero section doesn’t block scroll on tablets */
+.hero {
+  min-height: 100vh;
+  height: auto;
+}
+
+/* ✅ Prevent section overlap issue on iPad/tablet */
+section {
+  min-height: auto;
+  overflow: visible;
+}
+
+/* ✅ Footer always visible and not cut off */
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 
 /* ========== Header / Navbar ========== */
 /* Navbar Transparent by Default */
@@ -752,5 +779,27 @@ and (max-device-width: 1368px) {
     box-shadow: 0 0 25px rgba(61,190,41,0.8);
   }
 }
+#toTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  backdrop-filter: blur(8px);
+  background:  rgb(49, 130, 53);
+  color: #fff;
+  border: 1px solid rgb(49, 130, 53);
+  padding: 14px 18px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+  z-index: 100;
+  box-shadow: 0 0 15px rgba(0,255,150,0.5);
+}
 
+#toTopBtn:hover {
+  background: rgba(0, 255, 150, 0.25);
+  box-shadow: 0 0 25px rgba(0,255,150,0.8);
+  transform: scale(1.1);
+}
 
